@@ -1,0 +1,34 @@
+table{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    right: -350px;
+    top: 80px;
+    background-color: darkred;
+}
+
+.whole_element_border{
+    border-width: 4px;
+    border-color: black;
+}
+
+.three_side_border{
+    border-left-width: 4px;
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-color: black;
+}
+
+.left_header, .right_header, .middle_header {
+    background-color: white;
+}
+
+  ol.with-parentheses {
+				counter-reset: myCounter;
+				list-style: none;
+			}
+
+ol.with-parentheses > li::before {
+				content: counter( myCounter ) ') ';
+				counter-increment: myCounter;
+			}
